@@ -1,5 +1,4 @@
-# kenya_stocks_clustering
-# PROJECT BRIEF: KENYAN STOCK DATA SCRAPING & CLUSTERING ALGORITHM
+# Project Brief: Kenyan Stock Data Scraping & Clustering Algorithm
 
 # Big Picture
 Scrape daily Kenyan stock price data over 10 years and build clusters of the individual stocks based on daily returns (%) and standard deviation. Include visualization of the clusters with individual stocks as bubbles with ticker symbols included.
@@ -19,7 +18,7 @@ Scrape daily Kenyan stock price data over 10 years and build clusters of the ind
 4.	Append relevant data (already in form of a Pandas DataFrame) in a mega list at each iteration outside the loop
 5.	Concatenate all DataFrames in the mega list into one DataFrame and save raw data in CSV (should be almost 250,000 records).
 
-# Data Preparation:-
+# Data Preparation
 1.	Read saved file into a DataFrame (DF)
 2.	Create a copy of the DF with only relevant features – price and previous
 3.	Replace non-numeric data into numeric by replacing commas with nothing and converting DF into the float datatype
@@ -34,4 +33,3 @@ Scrape daily Kenyan stock price data over 10 years and build clusters of the ind
 4.	Initialize and fit K-Means model to the DF (input) containing mean and std dev of returns 
 5.	Predict the inputs and plot the clusters (use seaborn here)
 6.	Save the predictions into a DF that includes the ticker symbol, the sector, and cluster. 
-
