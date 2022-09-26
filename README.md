@@ -28,7 +28,7 @@ Scrape daily Kenyan stock price data over 10 years and build clusters of the ind
 
 # Modelling
 1.	Plot mean returns against std dev using a simple scatterplot (use pyplot or seaborn) – include ticker symbols next to the relevant point
-2.	Compute the z-scores to remove outliers from data – clustering is sensitive to outliers. Outliers have a z-score of -3<z>3. 
+2.	Compute the z-scores to remove outliers from data – clustering is sensitive to outliers. Outliers have a z-score of less than -3 or greater than 3. 
 3.	Create an elbow curve to guide the number of clusters to build. Value of K is at the elbow point
 4.	Initialize and fit K-Means model to the DF (input) containing mean and std dev of returns 
 5.	Predict the inputs and plot the clusters (use seaborn here)
